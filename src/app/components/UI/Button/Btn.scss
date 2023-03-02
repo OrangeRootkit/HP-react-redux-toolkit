@@ -1,0 +1,43 @@
+.rectangle {
+    width: 62px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px 0px 0px 4px;
+    text-align: center;
+
+    &:hover {
+        background-color: #818182;
+        cursor: pointer;
+    }
+}
+
+.sqr {
+
+    width: 36px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px 0px 0px 4px;
+    text-align: center;
+
+    &:hover {
+        background-color: #818182;
+        cursor: pointer;
+    }
+}
+
+.sqr_currentPage {
+    width: 36px;
+    height: 40px;
+    background-color: #818182;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px 0px 0px 4px;
+    text-align: center;
+    color: #fff;
+
+    &:hover {
+        background-color: #818182;
+        cursor: pointer;
+        }
+    }

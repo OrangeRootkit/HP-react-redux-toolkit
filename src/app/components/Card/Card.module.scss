@@ -1,0 +1,48 @@
+.card {
+    display: block;
+    background-color: #fff;
+    border: 1px solid  #DEE2E6;
+    border-radius: 4px;
+  }
+
+  .image__wrapper {
+    width: 334px;
+    // height: 192px;
+    height: 334px;
+  }
+
+
+  .image {
+    display: block;
+    width: 334px;
+    // height: 192px;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+
+  }
+
+  .card__text {
+    padding: 24px 25px ;
+  }
+
+  .text__name {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .text__discription {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .like {
+    position: relative;
+    bottom: 340px;
+    left: 230px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }

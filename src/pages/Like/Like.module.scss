@@ -1,0 +1,39 @@
+* {
+    font-family: 'Inter';
+}
+
+.link {
+    margin-top: 40px;
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+        // text-decoration: none;
+
+    &:visited {
+        text-decoration: none;
+        color: #000;
+    }
+
+}
+
+.liked {
+    margin-top: 48px;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 63px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 36px;
+    margin-bottom: 32px;
+}
+
+.line {
+  max-width: 1440px;
+  height: 1px;
+  margin: 0 auto;
+  border: 1px solid #DEE2E6;
+}

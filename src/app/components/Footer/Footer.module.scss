@@ -1,0 +1,21 @@
+.bottomLine {
+    display: flex;
+    margin: 20px 0px 20px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+
+
+    .pageWrapper {
+        display: flex;
+        align-items: center;    
+
+        .text {
+            display: block;
+            margin-right: 10px;
+        }
+    }
+
+
+}
+

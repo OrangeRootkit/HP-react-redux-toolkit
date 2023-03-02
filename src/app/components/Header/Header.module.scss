@@ -1,0 +1,73 @@
+.wrapper {
+    max-width: 688px;
+    margin: 0 auto;
+  }
+
+  .header {
+    padding-top: 64px;
+  }
+
+  .title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77.45px;
+    letter-spacing: -2%;
+  }
+
+  .subtitle {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 36px;
+    margin-bottom: 48px;
+  }
+
+  .school__wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #818182;
+  }
+
+  .school {
+    margin-right: 100px;
+  }
+
+  .input__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+
+  .select__label {
+    display: block;
+    color: #818182;
+    line-height: 28px;
+    font-size: 16px;
+    outline: 0;
+  }
+
+  .select__option {
+    color: #818182;
+  }
+
+  .select {
+    display: block;
+    width: 216px;
+    height: 38px;
+    padding: 9px 0 8px 17px;
+    border: 1px solid #CED4DA;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #ABB5BE;
+  }
+
+
+  .line {
+    max-width: 1440px;
+    height: 1px;
+    margin: 0 auto;
+    border: 1px solid #DEE2E6;
+  }
