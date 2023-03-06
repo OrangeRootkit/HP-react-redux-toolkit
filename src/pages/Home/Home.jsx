@@ -7,7 +7,7 @@ import { Card } from "../../app/components/Card/Card";
 import { BtnLink } from '../../app/components/UI/BtnLink/BtnLink';
 import { Footer } from "../../app/components/Footer/Footer";
 
-export const Home = ({ tempData, inputValue, selectValue, house, isLike, paginationLength, objFunc, selectorPages, currentPage, handleSelect, handleInput, cardsOnPage, makeLike, makeDislike}) => {
+export const Home = ({ tempData, inputValue, selectValue, house, isLike, paginationLength, objFunc, selectorPages, currentPage, handleSelect, handleInput, cardsOnPage, makeLike, makeDislike, selectDefaultValue}) => {
 
 
     return (
@@ -25,7 +25,7 @@ export const Home = ({ tempData, inputValue, selectValue, house, isLike, paginat
 
         <BtnLink/>
     </Main>
-    <Footer paginationLength={paginationLength}  objFunc={objFunc} selector={selectorPages} currentPage={currentPage} handleSelect={cardsOnPage}/>
+    <Footer paginationLength={paginationLength}  objFunc={objFunc} selector={selectorPages} currentPage={currentPage} handleSelect={cardsOnPage} selectDefaultValue={selectDefaultValue}/>
     
     </>
         )

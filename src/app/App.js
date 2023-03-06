@@ -10,15 +10,18 @@ function App() {
   const [data, setData] = useState([]);
   const storageKey = "RoJ6YU";
   const storageKeyPage = "W8LXgx";
+  const storageKeyCardsPage = "oxN5wv";
   const [selectValue, setSelectValue] = useState("Choose one");
   const [inputValue, setInputValue] = useState("");
-  const savedPage = +JSON.parse(localStorage.getItem(storageKeyPage)) ?? [];
+  const savedPage = +JSON.parse(localStorage.getItem(storageKeyPage)) ?? "1";
   const [currentPage, setPage] = useState(savedPage);
-  const [cardsPerPage, setCardsPerPage] = useState(2);
+
+  const savedCardsPage = JSON.parse(localStorage.getItem(storageKeyCardsPage)) ?? 8;
+  const [cardsPerPage, setCardsPerPage] = useState(savedCardsPage);
+
   const savedLikes = JSON.parse(localStorage.getItem(storageKey)) ?? [];
   const [isLike, setLike] = useState(savedLikes);
   const [selectorPages, setSelectorPages] = useState([2, 4, 8, 10, 12, 20, 50]);
-
 
   useEffect(() => {
     fetch("https://hp-api.onrender.com/api/characters")
@@ -38,9 +41,11 @@ function App() {
     setPage(savedPage);
   }, []);
 
+  
   useEffect(() => {
     localStorage.setItem(storageKeyPage, JSON.stringify(currentPage));
-  }, [currentPage]);
+    localStorage.setItem(storageKeyCardsPage, JSON.stringify(cardsPerPage));
+  }, [currentPage, cardsPerPage]);
 
 
   let newData = data
@@ -68,7 +73,6 @@ function App() {
       setPage(1);
     },
   };
-  
 
   const handleSelect = (e) => setSelectValue(e.target.value);
   const handleInput = (e) => setInputValue(e.target.value);
@@ -84,7 +88,6 @@ function App() {
 
   localStorage.setItem(storageKey, JSON.stringify(isLike));
 
-
   return (
     <>
       <Layout>
@@ -97,6 +100,7 @@ function App() {
                 tempData={tempData}
                 inputValue={inputValue}
                 selectValue={selectValue}
+                selectDefaultValue={cardsPerPage}
                 house={house}
                 isLike={isLike}
                 paginationLength={paginationLength}

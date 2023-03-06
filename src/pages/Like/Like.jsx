@@ -10,7 +10,7 @@ export const Like = ({filterData, makeDislike}) => {
   return (
     <>
       <Link className={s.link} to='/'>
-        <p>← Back To All</p>
+        <p>«Back To All</p>
       </Link>
       <h1 className={s.liked}>Liked ones</h1>
       <p className={s.text}>Your favorite characters from the Harry Potter universe.</p>
